@@ -6,6 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchdonorComponent } from './searchdonor/searchdonor.component';
 import { AdddonorComponent } from './adddonor/adddonor.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes:Routes=[
+  {
+    path:"",component:AdddonorComponent
+  },
+  {
+    path:"search",component:SearchdonorComponent
+  },
+]
+  
 
 @NgModule({
   declarations: [
@@ -16,7 +27,8 @@ import { AdddonorComponent } from './adddonor/adddonor.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
