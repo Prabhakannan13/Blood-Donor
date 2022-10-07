@@ -16,6 +16,9 @@ const appRoutes:Routes=[
   {
     path:"search",component:SearchdonorComponent
   },
+  {
+    path:"delete",component:DeletedonorComponent
+  }
 ]
   
 
