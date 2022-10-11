@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<h1>
+    View-all-donor
+</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone No</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <tr *ngFor="let i of donorData"></tr>
+                    <td>{{i.name}}</td>
+                    <td>((i.Phone}}</td> 
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
