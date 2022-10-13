@@ -13,13 +13,13 @@ export class ViewAllDonorComponent implements OnInit {
    }
    fetchData=()=>{
      this.myapi.viewdonorData().subscribe(
-     (data)=>{
-       this.donorData=data
-     }
+       (data)=>{
+         this.donorData=data
+       }
      )
-   }
+    }
 
-donorData = []
+donorData:any=[]
 
   ngOnInit(): void {
   }
